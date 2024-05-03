@@ -69,8 +69,6 @@ const MegaMenu = props => {
           })
         : null;
 
-        console.log('megaMenuData', items);
-
     return (
         <nav
             ref={mainNavRef}

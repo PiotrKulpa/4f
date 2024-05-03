@@ -78,7 +78,6 @@ const MegaMenuItem = props => {
         categoryUrlSuffix,
         onNavigate
     ]);
-console.log('children', category.children);
     const maybeDownArrowIcon = category.children.length ? (
         <Icon className={classes.arrowDown} src={ArrowDown} size={16} />
     ) : null;

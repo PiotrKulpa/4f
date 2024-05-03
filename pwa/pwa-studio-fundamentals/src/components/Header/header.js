@@ -16,6 +16,7 @@ import defaultClasses from '@magento/venia-ui/lib/components/Header/header.modul
 import StoreSwitcher from '@magento/venia-ui/lib/components/Header/storeSwitcher';
 import CurrencySwitcher from '@magento/venia-ui/lib/components/Header/currencySwitcher';
 import MegaMenu from '../MegaMenu';
+import WeatherInfo from '../WeatherInfo';
 import PageLoadingIndicator from '@magento/venia-ui/lib/components/PageLoadingIndicator';
 import { useIntl } from 'react-intl';
 
@@ -78,6 +79,7 @@ const Header = props => {
                         <Logo classes={{ logo: classes.logo }} />
                     </Link>
                     <MegaMenu />
+                    <WeatherInfo />
                     <div className={classes.secondaryActions}>
                         <SearchTrigger
                             onClick={handleSearchTriggerClick}
