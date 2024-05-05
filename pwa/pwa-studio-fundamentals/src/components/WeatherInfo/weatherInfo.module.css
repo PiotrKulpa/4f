@@ -1,34 +1,27 @@
-  .weatherInfo {
-    display: block;
-    composes: col-start-9 from global;
-    justify-self: left;
-    width: 120px;
+.weatherInfo {
+  composes: col-start-9 from global;
+  composes: justify-end from global;
+  width: 120px;
 }
 
 .weatherLocation {
-    font-size: 0.7rem;
-    width: 100%;
+  font-size: 0.7rem;
+  width: 100%;
 }
 
 .weatherWrapper {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .weatherImage {
-    margin: 0 0 -10px -10px;
+  margin: 0 0 -10px -10px;
 }
 
 .tempInfo {
-    font-size: 0.7rem;
-    color: blue;
+  font-size: 0.7rem;
+  color: blue;
 }
-
-.loading {
-    text-align: right;
-    font-size: 0.7rem;
-}
-
 
 

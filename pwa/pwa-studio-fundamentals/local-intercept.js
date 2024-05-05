@@ -17,24 +17,4 @@
  * or modify functionality from its dependencies.
  */
 
-module.exports = (targets) => {
-  const peregrineTargets = targets.of("@magento/peregrine");
-  const talonsTarget = peregrineTargets.talons;
-
-  talonsTarget.tap((talonWrapperConfig) => {
-    talonWrapperConfig.ProductFullDetail.useProductFullDetail.wrapWith(
-      "my-extension"
-    );
-  });
-
-  const builtins = targets.of("@magento/pwa-buildpack");
-  builtins.specialFeatures.tap((featuresByModule) => {
-    featuresByModule["@my-extension/my-product-page"] = {
-      // Wrapper modules must be ES Modules
-      esModules: true,
-    };
-  });
-};
-
-// NIESTETY NIE UDAŁO MI SIĘ ROZSZERZYĆ TALONA, 
-// DODAŁEM HOOKA do FOLDERU HOOKS oraz ZMODYFIKOWANE ZAPYTANIE DO FOLDERU QUERIES, WYDAJE SIĘ ŻE TEN WALKAROUND DZIAŁA
+module.exports = () => {}
